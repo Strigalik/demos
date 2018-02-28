@@ -1,0 +1,22 @@
+input[type="text"] {
+	line-height: 2;
+}
+
+.block>.content,
+.block.category .v-menu li a {
+	border: 1px solid #ccc;
+	border-top: 0;
+}
+
+.block.search form>input[type="text"] {
+	*width: 137px;
+}
+
+.block.search form>button {
+	*top: 7px;
+}
+
+.pagination {
+	*margin-top: 20px;
+	*display: inline;
+}
