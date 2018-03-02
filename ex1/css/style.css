@@ -32,6 +32,14 @@ ul {
     background: #d4431b;
 }
 
+.dark {
+    padding: 15px;
+    background-color: #35424a;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /* Header */
 header {
     background: #35424a;
@@ -116,11 +124,11 @@ header a:hover {
     height: 25px;
     width: 250px;
     border-radius: 5px;
-    /* box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.2); */
 }
 
 #newsletter input[type="email"]:focus {
     outline:none;
+    box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 /* Boxes */
@@ -146,7 +154,17 @@ header a:hover {
 }
 
 /* Sidebar */
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
 
+/* Main-col */
+article#main-col {
+    float: left;
+    width: 65%;
+}
 
 footer {
     padding: 20px;
