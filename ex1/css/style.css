@@ -17,6 +17,21 @@ ul {
     padding: 0;
 }
 
+.button_1 {
+    height: 37px;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #fff;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom, #e8491d, #c53f1a);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.button_1:hover {
+    background: #d4431b;
+}
+
 /* Header */
 header {
     background: #35424a;
@@ -59,6 +74,7 @@ header .highlight, header .current a {
 
 header a:hover {
     color: #ccc;
+    transition: color .2s ease-out;
 }
 
 /* Showcase */
@@ -70,7 +86,8 @@ header a:hover {
 }
 
 #showcase h1 {
-    margin: 100px 0 10px 0;
+    margin-top: 100px;
+    margin-bottom: 10px;
     font-size: 55px;
 }
 
@@ -82,4 +99,54 @@ header a:hover {
     padding: 15px;
     color: #fff;
     background: #35424a;
+}
+
+/* Newsletter */
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+    border-radius: 5px;
+    /* box-shadow:inset 0 1px 2px rgba(0, 0, 0, 0.2); */
+}
+
+#newsletter input[type="email"]:focus {
+    outline:none;
+}
+
+/* Boxes */
+#boxes {
+    margin-top: 20px;
+}
+
+#boxes .box {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+}
+
+#boxes .box:hover {
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.34);
+    transition: box-shadow 0.3s ease-out;
+}
+
+#boxes .box img {
+    width: 140px;
+}
+
+footer {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
 }
