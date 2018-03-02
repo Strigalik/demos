@@ -145,8 +145,14 @@ header a:hover {
     width: 140px;
 }
 
+/* Sidebar */
+
+
 footer {
     padding: 20px;
     border: 1px solid #ccc;
     margin-top: 20px;
+    color: #fff;
+    background-color: #e8491d;
+    text-align: center;
 }
