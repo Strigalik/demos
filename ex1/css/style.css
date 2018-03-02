@@ -160,10 +160,29 @@ aside#sidebar {
     margin-top: 10px;
 }
 
+aside#sidebar .quote label {
+    display: block;
+}
+
+aside#sidebar .quote input,aside#sidebar .quote textarea  {
+    width: 90%;
+    padding: 5px;
+    outline: none;
+}
+
 /* Main-col */
 article#main-col {
     float: left;
     width: 65%;
+}
+
+/* Services */
+ul#services li {
+    list-style-type: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    background: #e6e6e6;
 }
 
 footer {
