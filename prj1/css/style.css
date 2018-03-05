@@ -49,7 +49,12 @@ header {
     border-bottom: #e8491d 3px solid;
 }
 
-header a {
+header div a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header ul a {
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -80,7 +85,7 @@ header .highlight, header .current a {
     font-weight: bold;
 }
 
-header a:hover {
+header ul a:hover {
     color: #ccc;
     transition: color .2s ease-out;
 }
