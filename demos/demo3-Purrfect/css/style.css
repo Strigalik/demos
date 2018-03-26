@@ -1,0 +1,14 @@
+body {
+	background: url(https://images.unsplash.com/photo-1415369629372-26f2fe60c467) no-repeat center center fixed;
+	background-size: cover;
+	color: #fff;
+}
+
+#content {
+	text-align: center;
+	padding-top: 25%;
+}
+
+hr {
+	background-color: #fff;
+}
