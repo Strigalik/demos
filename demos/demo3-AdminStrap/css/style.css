@@ -36,6 +36,11 @@ body {
   color: #333;
 }
 
+/* Main */
+.spanpad {
+  padding-left: 5px;
+  padding-right: 10px;
+}
 
 /* Custom BS colors Start*/
 .navbar {
