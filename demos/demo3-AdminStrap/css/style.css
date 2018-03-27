@@ -2,13 +2,42 @@ body {
 	background: #f4f4f4;
 }
 
+.navbar {
+  line-height: 1.2;
+  max-height: 35px;
+}
 
+.main-color-bg {
+  background-color: #e74c3c;
+  border-color: #c0392b;
+  color: #fff;
+}
 
+/* Header */
+#header {
+  background: #333;
+  color: #fff;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-bottom: 15px;
+}
 
+#header .create {
+  padding-top: 10px;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  background: #ccc;
+  color: #333;
+}
+
+.breadcrumb a {
+  color: #333;
+}
 
 
 /* Custom BS colors Start*/
-
 .navbar {
   background-color: #e74c3c;
 }
