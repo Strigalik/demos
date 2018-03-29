@@ -43,16 +43,21 @@ body {
 }
 
 /* Progress Bars */
-.card h4 {
-  font-size: 16px;
-}
-
 .card .progress:first-of-type {
   margin-bottom: 10px;
 }
 
 .progress-bar {
   background: #333;
+}
+
+.wover {
+  margin-bottom: 20px;
+}
+
+.card.text-center:hover {
+  background: #f8f9fa;
+  transition: background .2s ease-out;  
 }
 
 /* Custom BS colors Start*/
