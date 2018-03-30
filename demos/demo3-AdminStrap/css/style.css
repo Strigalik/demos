@@ -2,11 +2,6 @@ body {
 	background: #f4f4f4;
 }
 
-/* .navbar {
-  line-height: 1.2;
-  max-height: 35px;
-} */
-
 .main-color-bg {
   background-color: #e74c3c !important;
   border-color: #c0392b !important;
@@ -42,6 +37,15 @@ body {
   padding-right: 10px;
 }
 
+.dropdown-item:active {
+  background-color: #E74C3C !important;
+}
+
+.btn-strap {
+  background-color: #E74C3C;
+  color: #fff;
+}
+
 /* Progress Bars */
 .card .progress:first-of-type {
   margin-bottom: 10px;
@@ -51,6 +55,7 @@ body {
   background: #333;
 }
 
+/* Cards */
 .wover {
   margin-bottom: 20px;
 }
