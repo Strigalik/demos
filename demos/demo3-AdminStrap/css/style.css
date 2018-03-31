@@ -1,5 +1,5 @@
 body {
-	background: #f4f4f4;
+  background: #f4f4f4;
 }
 
 .main-color-bg {
@@ -15,6 +15,7 @@ body {
   padding-bottom: 10px;
   padding-top: 10px;
   margin-bottom: 15px;
+  margin-top: 56px;
 }
 
 #header .create {
@@ -63,6 +64,16 @@ body {
 .card.text-center:hover {
   background: #f8f9fa;
   transition: background .2s ease-out;  
+}
+
+/* Footer */
+
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+  margin-top: 30px;
 }
 
 /* Custom BS colors Start*/

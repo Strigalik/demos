@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Admin Area | Dashboard</title>
+	<title>Admin Area | Pages</title>
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<!-- Custom styles for this template -->
@@ -16,15 +16,16 @@
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="/">AdminStrap</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false"
+			 aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item active">
+					<li class="nav-item">
 						<a class="nav-link" href="index.html">Dashboard</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item active">
 						<a class="nav-link" href="pages.html">Pages</a>
 					</li>
 					<li class="nav-item">
@@ -50,13 +51,14 @@
 			<div class="row">
 				<div class="col-md-10">
 					<h2>
-						<i class="fas fa-cog"></i> Dashboard
-						<small>Manage Your Site</small>
+						<i class="fas fa-cog"></i> Pages
+						<small>Manage Site Pages</small>
 					</h2>
 				</div>
 				<div class="col-md-2">
 					<div class="dropdown create">
-						<button class="btn dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<button class="btn dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+						 aria-expanded="false">
 							Create content
 						</button>
 						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -72,7 +74,8 @@
 	<section id="breadcrumb">
 		<div class="container">
 			<ol class="breadcrumb">
-				<li class="active">Home > Dashboard</li>
+				<!-- <li><a href="index.html">Dashboard</a></li> -->
+				<li class="active">Home > Pages</li>
 			</ol>
 		</div>
 	</section>
@@ -81,8 +84,9 @@
 			<div class="row">
 				<div class="col-md-3">
 					<div class="list-group">
-						<a href="index.html" class="list-group-item list-group-item-action active main-color-bg"><i class="fas fa-cog"></i>
-							 Dashboard
+						<a href="index.html" class="list-group-item list-group-item-action active main-color-bg">
+							<i class="fas fa-cog"></i>
+							Dashboard
 						</a>
 						<a href="pages.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
 							<i class="far fa-list-alt"></i>
@@ -117,91 +121,74 @@
 
 					<!-- Website Overview -->
 					<div class="card wover">
-						<div class="card-header main-color-bg">Website Overview</div>
+						<div class="card-header main-color-bg">Pages</div>
 						<div class="card-body">
 							<div class="row">
-								<div class="col-md-3">
-									<div class="card text-center">
-										<div class="card-body">
-											<h4>
-												<i class="fas fa-user"></i> 203</h4>
-											<h5>Users</h5>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="card text-center">
-										<div class="card-body">
-											<h4>
-												<i class="far fa-list-alt"></i> 12</h4>
-											<h5>Pages</h5>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="card text-center">
-										<div class="card-body">
-											<h4>
-												<i class="fas fa-pencil-alt"></i> 33</h4>
-											<h5>Posts</h5>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="card text-center">
-										<div class="card-body">
-											<h4>
-												<i class="far fa-chart-bar"></i> 12,103</h4>
-											<h5>Visitors</h5>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
+								<div class="col-md-12">
+									<input type="text" class="form-control" placeholder="Filter Pages...">
+									<br>
+									<div class="table-responsive-md">
+										<table class="table table-striped table-hover">
+											<thead>
+												<tr>
+													<th>Title</th>
+													<th>Published</th>
+													<th>Created</th>
+													<th></th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Home</td>
+													<td>
+														<i class="fas fa-check"></i>
+													</td>
+													<td>12/12/2016</td>
+													<td>
+														<a href="edit.html" class="btn btn-outline-dark btn-sm" role="button">Edit</a>
+														<a href="#" class="btn btn-danger btn-sm" role="button">Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td>About</td>
+													<td>
+														<i class="fas fa-check"></i>
+													</td>
+													<td>13/12/2016</td>
+													<td>
+														<a href="edit.html" class="btn btn-outline-dark btn-sm" role="button">Edit</a>
+														<a href="#" class="btn btn-danger btn-sm" role="button">Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Services</td>
+													<td>
+														<i class="fas fa-times"></i>
+													</td>
+													<td>14/12/2016</td>
+													<td>
+														<a href="edit.html" class="btn btn-outline-dark btn-sm" role="button">Edit</a>
+														<a href="#" class="btn btn-danger btn-sm" role="button">Delete</a>
+													</td>
+												</tr>
+												<tr>
+													<td>Contact</td>
+													<td>
+														<i class="fas fa-check"></i>
+													</td>
+													<td>15/12/2016</td>
+													<td>
+														<a href="edit.html" class="btn btn-outline-dark btn-sm" role="button">Edit</a>
+														<a href="#" class="btn btn-danger btn-sm" role="button">Delete</a>
+													</td>
+												</tr>
+											</tbody>
 
-					<!-- Latest Users -->
-					<div class="card">
-						<p class="card-header main-color-bg">Latest Users</p>
-						<div class="card-body">
-							<div class="table-responsive">
-								<table class="table table-striped table-hover">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Email</th>
-											<th>Joined</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Jill Smith</td>
-											<td>jillsmith@gmail.com</td>
-											<td>Dec 12, 2016</td>
-										</tr>
-										<tr>
-											<td>Eve Jackson</td>
-											<td>ejackson@yahoo.com</td>
-											<td>Dec 13, 2016</td>
-										</tr>
-										<tr>
-											<td>John Doe</td>
-											<td>jdoe@gmail.com</td>
-											<td>Dec 13, 2016</td>
-										</tr>
-										<tr>
-											<td>Stephanie Landon</td>
-											<td>landon@yahoo.com</td>
-											<td>Dec 14, 2016</td>
-										</tr>
-										<tr>
-											<td>Mike Johnson</td>
-											<td>mjohnson@gmail.com</td>
-											<td>Dec 15, 2016</td>
-										</tr>
-									</tbody>
-								</table>
+										</table>
+									</div>
+								</div>
 							</div>
+
 						</div>
 					</div>
 
@@ -211,10 +198,10 @@
 	</section>
 
 	<footer class="footer fixed-bottom">
-      <div class="container">
-        <span class="text-muted">Copyright AdminStrap, &copy; 2018</span>
-      </div>
-  </footer>
+		<div class="container">
+			<span class="text-muted">Copyright AdminStrap, &copy; 2018</span>
+		</div>
+	</footer>
 
 	<!-- Modals -->
 	<!-- Add Page -->
@@ -237,7 +224,7 @@
 							<label for="inputTA">Page Body</label>
 							<textarea name="editor1" class="form-control" id="inputTA" rows="3" placeholder="Page Body" required></textarea>
 							<script>
-								CKEDITOR.replace( 'editor1' );
+								CKEDITOR.replace('editor1');
 							</script>
 						</div>
 						<div class="form-check">
@@ -262,11 +249,15 @@
 		</div>
 	</div>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+	 crossorigin="anonymous"></script>
+
 </body>
 
 </html>
