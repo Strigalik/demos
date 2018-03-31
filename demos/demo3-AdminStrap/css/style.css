@@ -62,8 +62,8 @@ body {
 }
 
 .card.text-center:hover {
-  background: #f8f9fa;
-  transition: background .2s ease-out;  
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.4);
+  transition: box-shadow .2s ease-out;  
 }
 
 /* Footer */
