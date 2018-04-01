@@ -82,7 +82,7 @@
 				<div class="col-md-3">
 					<div class="list-group">
 						<a href="index.html" class="list-group-item list-group-item-action active main-color-bg"><i class="fas fa-cog"></i>
-							 Dashboard
+							Dashboard
 						</a>
 						<a href="pages.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
 							<i class="far fa-list-alt"></i>
@@ -114,7 +114,7 @@
 					</div>
 				</div>
 				<div class="col-md-9">
-
+					
 					<!-- Website Overview -->
 					<div class="card wover">
 						<div class="card-header main-color-bg">Website Overview</div>
@@ -125,148 +125,147 @@
 										<div class="card-body">
 											<h4>
 												<i class="fas fa-user"></i> 203</h4>
-											<h5>Users</h5>
+												<h5>Users</h5>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="card text-center">
+									<div class="col-md-3">
+										<div class="card text-center">
+											<div class="card-body">
+												<h4>
+													<i class="far fa-list-alt"></i> 12</h4>
+													<h5>Pages</h5>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-3">
+											<div class="card text-center">
+												<div class="card-body">
+													<h4>
+														<i class="fas fa-pencil-alt"></i> 33</h4>
+														<h5>Posts</h5>
+													</div>
+												</div>
+											</div>
+											<div class="col-md-3">
+												<div class="card text-center">
+													<div class="card-body">
+														<h4>
+															<i class="far fa-chart-bar"></i> 12,103</h4>
+															<h5>Visitors</h5>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+									<!-- Latest Users -->
+									<div class="card">
+										<p class="card-header main-color-bg">Latest Users</p>
 										<div class="card-body">
-											<h4>
-												<i class="far fa-list-alt"></i> 12</h4>
-											<h5>Pages</h5>
+											<div class="table-responsive">
+												<table class="table table-striped table-hover">
+													<thead>
+														<tr>
+															<th>Name</th>
+															<th>Email</th>
+															<th>Joined</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td>Jill Smith</td>
+															<td>jillsmith@gmail.com</td>
+															<td>Dec 12, 2016</td>
+														</tr>
+														<tr>
+															<td>Eve Jackson</td>
+															<td>ejackson@yahoo.com</td>
+															<td>Dec 13, 2016</td>
+														</tr>
+														<tr>
+															<td>John Doe</td>
+															<td>jdoe@gmail.com</td>
+															<td>Dec 13, 2016</td>
+														</tr>
+														<tr>
+															<td>Stephanie Landon</td>
+															<td>landon@yahoo.com</td>
+															<td>Dec 14, 2016</td>
+														</tr>
+														<tr>
+															<td>Mike Johnson</td>
+															<td>mjohnson@gmail.com</td>
+															<td>Dec 15, 2016</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="card text-center">
-										<div class="card-body">
-											<h4>
-												<i class="fas fa-pencil-alt"></i> 33</h4>
-											<h5>Posts</h5>
-										</div>
-									</div>
-								</div>
-								<div class="col-md-3">
-									<div class="card text-center">
-										<div class="card-body">
-											<h4>
-												<i class="far fa-chart-bar"></i> 12,103</h4>
-											<h5>Visitors</h5>
-										</div>
-									</div>
+									
 								</div>
 							</div>
 						</div>
-					</div>
-
-					<!-- Latest Users -->
-					<div class="card">
-						<p class="card-header main-color-bg">Latest Users</p>
-						<div class="card-body">
-							<div class="table-responsive">
-								<table class="table table-striped table-hover">
-									<thead>
-										<tr>
-											<th>Name</th>
-											<th>Email</th>
-											<th>Joined</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr>
-											<td>Jill Smith</td>
-											<td>jillsmith@gmail.com</td>
-											<td>Dec 12, 2016</td>
-										</tr>
-										<tr>
-											<td>Eve Jackson</td>
-											<td>ejackson@yahoo.com</td>
-											<td>Dec 13, 2016</td>
-										</tr>
-										<tr>
-											<td>John Doe</td>
-											<td>jdoe@gmail.com</td>
-											<td>Dec 13, 2016</td>
-										</tr>
-										<tr>
-											<td>Stephanie Landon</td>
-											<td>landon@yahoo.com</td>
-											<td>Dec 14, 2016</td>
-										</tr>
-										<tr>
-											<td>Mike Johnson</td>
-											<td>mjohnson@gmail.com</td>
-											<td>Dec 15, 2016</td>
-										</tr>
-									</tbody>
-								</table>
+					</section>
+					
+					<footer class="footer fixed-bottom">
+						<div class="container">
+							<span class="text-muted">Copyright AdminStrap, &copy; 2018</span>
+						</div>
+					</footer>
+					
+					<!-- Modals -->
+					<!-- Add Page -->
+					<div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="AddPageModal" aria-hidden="true">
+						<div class="modal-dialog" role="document">
+							<div class="modal-content">
+								<form action="" method="get">
+									<div class="modal-header">
+										<h5 class="modal-title" id="AddPageModal">Add Page</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<div class="form-group">
+											<label for="inputPT">Page Title</label>
+											<input type="text" class="form-control" id="inputPT" placeholder="Page Title" required>
+										</div>
+										<div class="form-group">
+											<label for="inputTA">Page Body</label>
+											<textarea name="editor1" class="form-control" id="inputTA" rows="3" placeholder="Page Body" required></textarea>
+											<script>
+												CKEDITOR.replace( 'editor1' );
+											</script>
+										</div>
+										<div class="form-check">
+											<input type="checkbox" class="form-check-input" id="Check1">
+											<label class="form-check-label" for="Check1">Published</label>
+										</div>
+										<div class="form-group">
+											<label for="inputMT">Meta Tags</label>
+											<input type="text" class="form-control" id="inputMT" placeholder="Add Some Tags...">
+										</div>
+										<div class="form-group">
+											<label for="inputMD">Meta Description</label>
+											<input type="text" class="form-control" id="inputMD" placeholder="Add Meta Description...">
+										</div>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-outline-dark btn-sm" data-dismiss="modal">Close</button>
+										<button type="submit" class="btn btn-strap btn-sm">Save changes</button>
+									</div>
+								</form>
 							</div>
 						</div>
 					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<footer class="footer fixed-bottom">
-      <div class="container">
-        <span class="text-muted">Copyright AdminStrap, &copy; 2018</span>
-      </div>
-  </footer>
-
-	<!-- Modals -->
-	<!-- Add Page -->
-	<div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="AddPageModal" aria-hidden="true">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<form action="" method="get">
-					<div class="modal-header">
-						<h5 class="modal-title" id="AddPageModal">Add Page</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
-						<div class="form-group">
-							<label for="inputPT">Page Title</label>
-							<input type="text" class="form-control" id="inputPT" placeholder="Page Title" required>
-						</div>
-						<div class="form-group">
-							<label for="inputTA">Page Body</label>
-							<textarea name="editor1" class="form-control" id="inputTA" rows="3" placeholder="Page Body" required></textarea>
-							<script>
-								CKEDITOR.replace( 'editor1' );
-							</script>
-						</div>
-						<div class="form-check">
-							<input type="checkbox" class="form-check-input" id="Check1">
-							<label class="form-check-label" for="Check1">Published</label>
-						</div>
-						<div class="form-group">
-							<label for="inputMT">Meta Tags</label>
-							<input type="text" class="form-control" id="inputMT" placeholder="Add Some Tags...">
-						</div>
-						<div class="form-group">
-							<label for="inputMD">Meta Description</label>
-							<input type="text" class="form-control" id="inputMD" placeholder="Add Meta Description...">
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-outline-dark btn-sm" data-dismiss="modal">Close</button>
-						<button type="submit" class="btn btn-strap btn-sm">Save changes</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-	
-</body>
-
+					
+					<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+					<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+					<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+					<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+					
+</body>			
 </html>

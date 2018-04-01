@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Admin Area | Edit Page</title>
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="css/style.css" rel="stylesheet">
+	<script src="https://cdn.ckeditor.com/4.9.1/standard/ckeditor.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="/">AdminStrap</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false"
+			 aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Dashboard</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pages.html">Pages</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="posts.html">Posts</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="users.html">Users</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav justify-content-end">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Welcome, Strix</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="login.html">Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<header id="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-10">
+					<h2>
+						<i class="fas fa-cog"></i> Edit Page
+						<small>About</small>
+					</h2>
+				</div>
+				<div class="col-md-2">
+					<div class="dropdown create">
+						<button class="btn dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+						 aria-expanded="false">
+							Create content
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+							<button class="dropdown-item" data-toggle="modal" data-target="#addPage">Add Page</button>
+							<button class="dropdown-item" href="#">Add Post</button>
+							<button class="dropdown-item" href="#">Add User</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section id="breadcrumb">
+		<div class="container">
+			<ol class="breadcrumb">
+				<!-- <li><a href="index.html">Dashboard</a></li> -->
+				<li class="active">Home > Edit Page</li>
+			</ol>
+		</div>
+	</section>
+	<section id="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<div class="list-group">
+						<a href="index.html" class="list-group-item list-group-item-action active main-color-bg">
+							<i class="fas fa-cog"></i>
+							Dashboard
+						</a>
+						<a href="pages.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+							<i class="far fa-list-alt"></i>
+							<span class="spanpad">Pages</span>
+							<span class="badges badge-secondary badge-pill ml-auto small">12</span>
+						</a>
+						<a href="posts.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+							<i class="fas fa-pencil-alt"></i>
+							<span class="spanpad">Posts</span>
+							<span class="badges badge-secondary badge-pill ml-auto small">33</span>
+						</a>
+						<a href="users.html" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+							<i class="fas fa-user"></i>
+							<span class="spanpad">Users</span>
+							<span class="badges badge-secondary badge-pill ml-auto small">203</span>
+						</a>
+					</div>
+					<div class="card">
+						<div class="card-body">
+							<h6 class="card-title">Disk Space Used</h6>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">60%</div>
+							</div>
+							<h6 class="card-title">Bandwidth Used</h6>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">40%</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-9">
+
+					<!-- Website Overview -->
+					<div class="card wover">
+						<div class="card-header main-color-bg">Edit Page</div>
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<label for="inputPT">Page Title</label>
+										<input type="text" class="form-control" id="inputPT" placeholder="Page Title" value="About">
+									</div>
+									<div class="form-group">
+										<label for="inputTA">Page Body</label>
+										<textarea name="editor1" class="form-control" id="inputTA" rows="3" placeholder="Page Body" required>
+											Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus omnis fugiat corrupti expedita delectus qui vitae eos dolore quod asperiores voluptatem officiis, ex accusantium ut nulla beatae adipisci voluptatibus nobis.
+										</textarea>
+									</div>
+									<div class="form-check">
+										<input type="checkbox" class="form-check-input" id="Check1" checked>
+										<label class="form-check-label" for="Check1">Published</label>
+									</div>
+									<div class="form-group">
+										<label for="inputMT">Meta Tags</label>
+										<input type="text" class="form-control" id="inputMT" placeholder="Add Some Tags..." value="tag1, tag2">
+									</div>
+									<div class="form-group">
+										<label for="inputMD">Meta Description</label>
+										<input type="text" class="form-control" id="inputMD" placeholder="Add Meta Description..." value="Lorem ipsum dolor sit, amet consectetur adipisicing elit">
+									</div>
+
+									<a class="btn btn-outline-dark btn-sm" href="pages.html" role="button">Close</a>
+									<button type="submit" class="btn btn-strap btn-sm">Submit</button>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer fixed-bottom">
+		<div class="container">
+			<span class="text-muted">Copyright AdminStrap, &copy; 2018</span>
+		</div>
+	</footer>
+
+	<!-- Modals -->
+	<!-- Add Page -->
+	<div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="AddPageModal" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<form action="" method="get">
+					<div class="modal-header">
+						<h5 class="modal-title" id="AddPageModal">Add Page</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="inputPT">Page Title</label>
+							<input type="text" class="form-control" id="inputPT" placeholder="Page Title" required>
+						</div>
+						<div class="form-group">
+							<label for="inputTA">Page Body</label>
+							<textarea name="editor1" class="form-control" id="inputTA" rows="3" placeholder="Page Body" required></textarea>
+							<script>
+								CKEDITOR.replace('editor1');
+							</script>
+						</div>
+						<div class="form-check">
+							<input type="checkbox" class="form-check-input" id="Check1">
+							<label class="form-check-label" for="Check1">Published</label>
+						</div>
+						<div class="form-group">
+							<label for="inputMT">Meta Tags</label>
+							<input type="text" class="form-control" id="inputMT" placeholder="Add Some Tags...">
+						</div>
+						<div class="form-group">
+							<label for="inputMD">Meta Description</label>
+							<input type="text" class="form-control" id="inputMD" placeholder="Add Meta Description...">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-outline-dark btn-sm" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-strap btn-sm">Save changes</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+	 crossorigin="anonymous"></script>
+
+</body>
+
+</html>
